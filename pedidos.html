@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+
+    <style>
+        body {
+            background-image: url(fondo.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }       
+    </style>
+
+    <title>EL ZORRO DE VALENTINA</title>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark colorcarta sticky-top">
+
+        <a class="navbar-brand fuente4 col-xs-10" href="index.html">        
+            El Zorro de Valentina
+        </a>
+
+        <button class="navbar-toggler colornaranja colorblanco colorarriba" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            Z
+        </button>
+        
+        <div class="collapse navbar-collapse ml-auto mr-auto" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <a class="nav-link colorblanco fuente5 colorarriba" href="index.html">Nosotros</a>
+                    
+                <a class="nav-link colorblanco fuente5 colorarriba" href="contacto.html">Contacto</a>
+
+                <a class="nav-link  active colorblanco fuente5 colorarriba" href="pedidos.html">Pedidos</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link colorblanco fuente5 dropdown-toggle colorarriba" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menú
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item colorarriba" href="cortes.html">Cortes</a>
+                        <a class="dropdown-item colorarriba" href="mariscos.html">Mariscos</a>
+                        <a class="dropdown-item colorarriba" href="sushi.html">Sushi</a>
+                        <a class="dropdown-item colorarriba" href="yakimeshi.html">Yakimeshi y Kushiage</a>
+                        <a class="dropdown-item colorarriba" href="pasta.html">Pastas y Ensaladas</a>
+                        <a class="dropdown-item colorarriba" href="crepas.html">Crepas dulces y saladas</a>
+                        <a class="dropdown-item colorarriba" href="bebidas.html">Bebidas</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <form>
+
+    <!--INFORMACIÓN DE PEDIDO-->
+
+    	<div class="col-md-12 colornaranja" id="header1">
+	        <p class="colorblanco fuentegd fuente4 centrarh">AGREGA TU INFORMACIÓN DE PEDIDO</p>
+	    </div>
+
+	  	<div class="container">
+	  		<div id="formulario1">
+	  			<div class="imagenzorro col-md-11 ml-auto mr-auto">
+	  				<br>
+	  				<div class="row" >
+				    	<div class="col-md-4 ml-auto">
+				      		<input type="text" class="form-control centrarh" id="101" placeholder="Nombre" required autofocus onchange="perro()">
+				    	</div>
+				    	<div class="col-md-4">
+				      		<input type="text" class="form-control centrarh" placeholder="Apellido">
+				    	</div>
+				    	<div class="col-md-3 mr-auto">
+				      		<input type="text" class="form-control centrarh" id="102"placeholder="Telefono" required onchange="perro()">
+				    	</div>
+				  	</div>
+		  		
+				  	<br>
+				  	
+				  	<div class="row">
+				    	<div class="col-md-3 ml-auto">
+				      		<input type="text" disabled class="form-control centrarh" placeholder="CP. 08760">
+				    	</div>
+				    	<div class="col-md-5">
+				      		<input type="text" class="form-control centrarh" id="103" placeholder="Calle" required onchange="perro()">
+				    	</div>
+				    	<div class="col-md-3 mr-auto">
+				      		<input type="text" class="form-control centrarh" id="104" placeholder="Numero" required onchange="perro()">
+				    	</div>
+				  	</div>
+	  				<br>
+	  			</div>
+	  			<br>
+			</div>
+		</div>
+	
+
+
+		<div class="col-md-12 colornaranja" id="header2">
+	        <p class="colorblanco fuentegd fuente4 centrarh">AGREGA TU COMIDA</p>
+	    </div>
+
+	    <div class="row ml-auto mr-auto">
+
+		<!--INFORMACIÓN DE CORTES-->
+
+		    <div class="col-md-5 ml-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton2">
+
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="2" onclick="mostrar(this), sumar()">
+			    			AÑADIR CORTES
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    		
+			    	</div>
+			    </div>
+
+				<div class="container">	
+				  	<div id="formulario2" style="display:none;">
+				  		<div class="imagencarnes col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">MARÍA BONITA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$165</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt1" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">MEJOR IMPOSIBLE</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$195</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt2" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">IRRESISTIBLE</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$195</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt3" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">TÚ VOLVERAS</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$155</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt4" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+						    		<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="2" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+							
+			  			</div>
+			  		</div>
+		  		</div>
+		    </div>
+
+		<!--INFORMACIÓN DE MARISCOS-->
+
+		    <div class="col-md-5 mr-auto">
+		  		
+			    <div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton3">
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="3" onclick="mostrar(this), sumar()">
+			    			AÑADIR MARISCOS
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    	</div>
+			    </div>
+
+				<div class="container">	
+				  	<div id="formulario3" style="display:none;">
+				  		<div class="imagenmariscos col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">THE LOVE LOOK</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$155</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt5" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">ABRÁZAME QUE TENGO FRÍO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$155</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt6" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">APASIONADO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$190</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt7" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">MI PRIMER AMOR</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$75</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt8" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">ARRÁNCAME EL CORAZÓN</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$125</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt9" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">LOS MAGNÍFICOS</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$98</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt10" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">MEJILLONES A LA VALENTINA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$95</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt11" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">STEAK DE ATÚN</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$195</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt12" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+						    		<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="3" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+		  		</div>
+		  	</div>
+
+		</div>
+
+
+
+		<div class="row ml-auto mr-auto">
+
+  		<!--INFORMACIÓN DE SUSHI-->
+
+			<div class="col-md-5 ml-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton4">
+
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="4" onclick="mostrar(this), sumar()">
+			    			AÑADIR SUSHI
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    		
+			    	</div>
+			    </div>
+
+			    <div class="container">	
+				  	<div id="formulario4" style="display:none;">
+				  		<div class="imagensushi col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">PIRATA ROLL</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$65</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt13" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">NEVADO ROLL</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$65</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt14" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">VERDE ENCANTO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$65</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt15" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">DRAGON ROLL</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$75</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt16" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">FRESCO Y DULCE</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$55</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt17" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+						    		<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="4" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+				</div>
+	  		</div>
+
+  		<!--INFORMACIÓN DE YAKIMESHI-->
+
+	  		<div class="col-md-5 mr-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton5">
+
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="5" onclick="mostrar(this), sumar()">
+			    			AÑADIR YAKIMESHI
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    		
+			    	</div>
+			    </div>
+
+			    <div class="container">	
+				  	<div id="formulario5" style="display:none;">
+				  		<div class="imagenyakimeshi col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">YAKIMESHI SENCILLO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$50</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt18" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">YAKIMESHI CON POLLO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$55</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt19" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">YAKIMESHI C/ARRACHERA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$60</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt20" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">YAKIMESHI C/RIB EYE</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$65</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt21" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">YAKIMESHI C/CAMARÓN</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$65</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt22" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">YAKIMESHI C/PULPO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$60</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt23" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">YAKIMESHI MIXTO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$65</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt24" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+						    		<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="5" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+			  	</div>
+			</div>
+
+		</div>
+
+
+
+		<div class="row ml-auto mr-auto">
+
+		<!--INFORMACIÓN DE KUSHIAGE-->
+
+		    <div class="col-md-5 ml-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton6">
+
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="6" onclick="mostrar(this), sumar()">
+			    			AÑADIR KUSHIAGE
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    		
+			    	</div>
+			    </div>
+
+			    <div class="container">	
+				  	<div id="formulario6" style="display:none;">
+				  		<div class="imagenkushiage col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">KUSHIAGE QUESO MANCHEGO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$60</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt25" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">KUSHIAGE PLÁTANO MACHO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$50</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt26" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">KUSHIAGE POLLO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$55</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt27" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">KUSHIAGE ARRACHERA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$60</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt28" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">KUSHIAGE CAMARÓN</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$70</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt29" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+							    	<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="6" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+		  		</div>
+		  	</div>
+
+		<!--INFORMACIÓN DE PASTAS-->
+
+		  	<div class="col-md-5 mr-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton7">
+
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="7" onclick="mostrar(this), sumar()">
+			    			AÑADIR PASTA
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    		
+			    	</div>
+			    </div>
+
+			    <div class="container">	
+				  	<div id="formulario7" style="display:none;">
+				  		<div class="imagenpasta col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">FRUTOS DEL MAR</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$140</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt30" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">TRES AMORES</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$138</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt31" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">DEA VERDI</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$95</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt32" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+							    	<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="7" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+		  		</div>
+		  	</div>
+
+		</div>
+
+
+
+  		<div class="row ml-auto mr-auto">
+
+		<!--INFORMACIÓN DE ENSALADAS-->
+
+		    <div class="col-md-5 ml-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton8">
+
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="8" onclick="mostrar(this), sumar()">
+			    			AÑADIR ENSALADA
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    		
+			    	</div>
+			    </div>
+
+			    <div class="container">	
+				  	<div id="formulario8" style="display:none;">
+				  		<div class="imagenensalada col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">COCOPOLLO RASP BERRY</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$75</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt33" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">CESAR A LA VALENTINA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$70</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt34" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">BÚFALO MIX</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$70</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt35" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">ESPINACA BOOM</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$80</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt36" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+							    	<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="8" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+		  		</div>
+		  	</div>
+
+		<!--INFORMACIÓN DE CREPA DULCE-->
+
+		  	<div class="col-md-5 mr-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton9">
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="9" onclick="mostrar(this), sumar()">
+			    			AÑADIR CREPA DULCE
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    	</div>
+			    </div>
+
+			    <div class="container">	
+				  	<div id="formulario9" style="display:none;">
+				  		<div class="imagencrepad col-md-112 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">CREMOSA DELICIA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$40</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt37" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">INOLVIDABLE</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$45</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt38" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">PASIÓN Y CULPA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$45</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt39" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">TENTACIÓN</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$45</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt40" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+							    	<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="9" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+				</div>
+			</div>
+
+  		</div>
+
+
+
+		<div class="row ml-auto mr-auto">
+
+		<!--INFORMACIÓN DE CREPA SALADA-->
+
+		    <div class="col-md-5 ml-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton10">
+
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="10" onclick="mostrar(this), sumar()">
+			    			AÑADIR CREPA SALADA
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    		
+			    	</div>
+			    </div>
+
+				<div class="container">	
+				  	<div id="formulario10" style="display:none;">
+				  		<div class="imagencrepas col-md-112 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">CREPA JAMÓN/PAVO/MANCHEGO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$40</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt41" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">CREPA CHAMPIÑONES CON QUESO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$45</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt42" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">CREPA HAWAIANA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$40</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt43" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+							    	<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="10" onclick="ocultar(this), restar()">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+		  		</div>
+		  	</div>
+
+		<!--INFORMACIÓN DE BEBIDAS-->
+
+		  	<div class="col-md-5 mr-auto">
+
+		    	<div class="row col-md-12 ml-auto mr-auto">
+			    	<div class="row ml-auto mr-auto" id="boton11">
+			    		<p class="btn fuentegd fuente6 colorblanco colorcarta colorarriba" id="11" onclick="mostrar(this), sumar()">
+			    			AÑADIR BEBIDAS
+			    			<img src="mas.png" width="30" height="30">
+			    		</p>
+			    	</div>
+			    </div>
+
+				<div class="container">	
+				  	<div id="formulario11"" style="display:none;">
+				  		<div class="imagenbebidas col-md-12 ml-auto mr-auto">
+				  			<br>
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">REFRESCO 600ml</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$18</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt44" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">AGUA DE SABOR 1l</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$25</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt45" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">CAFÉ AMERICANO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$25</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt46" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">CAFÉ CAPUCHINO</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$28</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt47" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+			    					<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colorcarta">CERVEZA 375ml</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colorcarta">$22</label>
+				    				<div class="col-xs-12 col-md-2 colorcarta">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt48" placeholder="0">
+				    				</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="row">
+			    				<div class="row col-md-12 ml-auto mr-auto">
+				    				<label class="col-xs-6 col-md-8 mr-auto col-form-label fuentegd colorblanco centrarh colornt">MÁS AGUA</label>
+				    				<label class="col-xs-6 col-md-2 col-form-label fuentegd colorblanco derechah colornt">$15</label>
+				    				<div class="col-xs-4 col-md-2 colornt">
+				      					<input type="number" class="form-control centrarh colorrojo fuentexl" min="0" id="opt49" placeholder="0">
+				    				</div>
+				    			</div>
+			    			</div>
+			    			<br>
+
+			    			<div class="row col-md-12 ml-auto mr-auto">
+						    	<div class="row ml-auto mr-auto">
+							    	<p class="btn fuentegd fuente5 colorblanco colorcarta colorarribax" id="11" onclick="ocultar(this), restar()" href="">LISTO</p>
+							    </div>
+							</div>
+
+			  			</div>
+				  	</div>
+		  		</div>
+		  	</div>
+
+		</div>
+  	
+  	<!-- CONFIRMA TU PEDIDO -->
+
+	  	<div class="container col-md-12 centrarboton">
+	  		<button class="btn colorcarta colorblanco colorarribax fuente5 fuentegd" href="#vemergente1" data-toggle="modal" onclick="pedido()">
+	  			CONFIRMA TU PEDIDO
+	  		</button>
+
+	  		<div class="modal fade" id="vemergente1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header bg-warning">
+							<div class="container">
+								<p class="colornegro fuentegd fuente1 centrarh">CONFIRMA TU PEDIDO</p>
+							</div>
+						</div>
+
+						<div class="modal-body">
+							<div id="subtotal"></div>
+							
+							<div id="total"></div>
+
+							<div class="form-check">
+							  	<input class="form-check-input" type="checkbox" value="" required="">
+							  	<label class="fuente6 fuentexs centrarh">
+							    Acepto que mi número será usado para el contacto y supervisión de mi pedido.
+							  	</label>
+							</div>
+
+							<div class="container centrarh" id="btnconfirmar"> </div>	
+						</div>
+
+					</div>
+				</div>
+			</div>
+	  	</div>
+
+	  	
+
+	</form>
+
+<!-- SCRIPTS BOOTSTRAP Y JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+    	var precios=[165,195,195,155,
+						155,155,190,75,125,98,95,195,
+						65,65,65,75,55,
+						50,55,60,65,65,60,65,
+						60,50,55,60,70,
+						140,138,95,
+						75,70,70,80,
+						40,45,45,45,
+						40,45,40,
+						18,25,25,28,22,15];
+
+		var nombre=['MARÍA BONITA','MEJOR IMPOSIBLE','IRRESISTIBLE','TÚ VOLVERAS',
+						'THE LOVE LOOK','ABRÁZAME QUE TENGO FRÍO','APASIONADO','MI PRIMER AMOR','ARRÁNCAME EL CORAZÓN','LOS MAGNÍFICOS','MEJILLONES A LA VALENTINA','STEAK DE ATÚN',
+						'PIRATA ROLL','NEVADO ROLL','VERDE ENCANTO','DRAGON ROLL','FRESCO Y DULCE',
+						'YAKI SENCILLO','YAKI C/POLLO','YAKI C/ARRACHERA','YAKI C/RIB EYE','YAKI C/CAMARÓN','YAKI C/PULPO','YAKI MIXTO',
+						'KUSHI QUESO MANCHEGO','KUSHI PLÁTANO MACHO','KUSHI POLLO','KUSHI ARRACHERA','KUSHI CAMARÓN',
+						'FRUTOS DEL MAR','TRES AMORES','DEA VERDI',
+						'COCOPOLLO RASP BERRY','CESAR A LA VALENTINA','BÚFALO MIX','ESPINACA BOOM',
+						'CREPA CREMOSA DELICIA','CREPA INOLVIDABLE','CREPA PASIÓN Y CULPA','CREPA TENTACIÓN',
+						'CREPA JAMÓN, PAVO Y MANCHEGO','CREPA CHAMPIÑONES CON QUESO','CREPA HAWAIANA',
+						'REFRESCO 600ml','AGUA DE SABOR 1l','CAFÉ AMERICANO','CAFÉ CAPUCHINO','CERVEZA 375ml','MÁS AGUA'];
+
+    	function ocultar(x){
+    		document.getElementById('formulario'+x.id).style.display = 'none';
+    		document.getElementById('boton'+x.id).style.display='block';
+    		document.getElementById(x.id).style.backgroundColor='#5cb85c';
+		}
+
+		function mostrar(x){
+			document.getElementById('formulario'+x.id).style.display = 'block';
+			document.getElementById('boton'+x.id).style.display='none';
+			document.getElementById(x.id).style.backgroundColor='#d9534f';
+		}
+
+		var ctotal=0, contador=0; cparcial=0, cantidad=0
+		function pedido(){
+
+			var cadena='<div class="row">  <p class="col-xs-4 col-md-2 fuentegd colornegro fuente5 izquierdah">CANT.</p> 		<p class="col-xs-8 col-md-6 fuentegd colornegro fuente5 centrarh">PLATILLO</p>	<p class="col-xs-6 col-md-2 fuentegd colornegro fuente5 derechah">P.U.</p>			<p class="col-xs-6 col-md-2 fuentegd colornegro fuente5 derechah bg-warning">SUB</p>	</div>';
+			
+			for (var i = 1; i < 50; i++) {
+				if((document.getElementById('opt'+i).value)>0){
+					cantidad=document.getElementById('opt'+i).value;
+					cparcial=cantidad*precios[i-1];
+					ctotal=ctotal+cparcial;
+					cadena=cadena+'<div class="row">	<p class="col-md-2 colornegro fuente5 izquierdah">'+cantidad+'</p>	<p class="col-md-6 colornegro fuente5 centrarh">'+nombre[i-1]+': </p>		<p class="col-md-2 colornegro fuente5 derechah">$'+precios[i-1]+'</p>	<p class="col-md-2 colornegro fuente5 fuentegd derechah bg-warning">$'+cparcial+'</p>	</div>'
+					contador=contador+1;
+				}
+			}
+			if(contador>0){
+				document.getElementById('subtotal').innerHTML=cadena;
+				document.getElementById('total').innerHTML='<p class="colorblanco fuentegd fuente4 centrarh bg-danger">Total de tu pedido: $'+ctotal+'</p>';
+				document.getElementById('btnconfirmar').innerHTML = '<button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Volver</button> <button type="submit" class="btn btn-success btn-lg">Confirmar</button>';
+				ctotal=0;
+			}
+
+			if (contador<1){
+				cadena='<div class="row">	<p class="col-md-12 colornegro fuentegd fuente4 centrarh">		No has seleccionado ningún platillo</p>	</div>';
+				document.getElementById('subtotal').innerHTML=cadena;
+				document.getElementById('total').style.display='none';
+				document.getElementById('btnconfirmar').innerHTML='<button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Volver</button>';
+			}
+		}
+
+		conta=0;
+		
+		function perro(){
+			conta=conta+1;
+			if (conta>3) {
+				document.getElementById('header1').style.backgroundColor='#5cb85c';
+				document.getElementById('header1').innerHTML='<p class="colorblanco fuentegd fuente4 centrarh">INFORMACIÓN DE PEDIDO COMPLETA</p>'
+				conta=0
+			}
+		}
+
+		contacomida=0;
+		function sumar(){
+			contacomida=contacomida+1;
+			document.getElementById('header2').style.backgroundColor='#d9534f';
+
+		}
+		function restar(){
+			contacomida=contacomida-1;
+			if (contacomida==0){
+				document.getElementById('header2').style.backgroundColor='#5cb85c';
+				
+			}
+		}
+    </script>
+
+  </body>
+</html>
